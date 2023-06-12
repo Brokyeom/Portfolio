@@ -6,7 +6,8 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<h1>이것이 메인페이지</h1>
+<h2>안녕하세요!</h2>
+<h1>웹 FE 개발자 김형겸입니다.</h1>
 
 <style>
 </style>
