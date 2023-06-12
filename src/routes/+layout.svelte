@@ -1,7 +1,10 @@
 <script>
 </script>
 
-<div class="app">네비게이션 바가 들어갈거에요</div>
+<div class="app">
+	<a href="/">메인페이지</a>
+	<a href="/about">About</a>
+</div>
 <slot />
 
 <style>
