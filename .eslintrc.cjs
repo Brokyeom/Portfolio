@@ -1,13 +1,23 @@
 module.exports = {
 	root: true,
-	extends: [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended',
-		'plugin:svelte/recommended',
-		'prettier'
-	],
+	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:svelte/recommended', 'prettier'],
 	parser: '@typescript-eslint/parser',
-	plugins: ['@typescript-eslint'],
+	plugins: ['@typescript-eslint', 'prettier'],
+	rules: {
+		semi: ['error', 'always'],
+		quotes: ['error', 'single'],
+		'no-multiple-empty-lines': ['error', { max: 1 }],
+		'prettier/prettier': 'error',
+		'no-tabs': [
+			'error',
+			{
+				allowIndentationTabs: true
+			}
+		],
+		'computed-property-spacing': ['error', 'never'],
+		'space-in-parens': ['error', 'never'],
+		'eol-last': ['error', 'always']
+	},
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,
