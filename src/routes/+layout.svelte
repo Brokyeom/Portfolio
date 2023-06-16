@@ -1,18 +1,34 @@
-<script>
-</script>
-
-<section class="flex">
+<section>
 	<nav>
-		<div class="flex flex-col w-60 h-screen">
-			<a href="/" class="text-purple-500">자기소개</a>
-			<a href="/projects" class="text-purple-500">프로젝트</a>
-			<a href="/activities" class="text-purple-500">대외활동</a>
+		<div class="nav_options">
+			<a href="/">자기소개</a>
+			<a href="/projects">프로젝트</a>
+			<a href="/activities">대외활동</a>
 		</div>
 	</nav>
-	<div class="flex flex-col items-center w-full">
+	<div class="content_area">
 		<slot />
 	</div>
 </section>
 
 <style>
+	section {
+		display: flex;
+	}
+	.nav_options {
+		display: flex;
+		flex-direction: column;
+		width: 15rem;
+		height: 100vh;
+
+		margin: 2rem;
+	}
+	nav a {
+		color: violet;
+	}
+	.content_area {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 </style>
