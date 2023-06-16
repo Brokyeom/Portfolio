@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>김형겸 : 대외활동</title>
+	<meta name="description" content="Svelte demo app" />
+</svelte:head>
+
 <section>
 	<h1>대외활동</h1>
 	<h2>1. SOPT Makers</h2>
