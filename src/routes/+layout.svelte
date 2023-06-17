@@ -8,11 +8,17 @@
 	</nav>
 </header>
 
+<article class="px-48 pt-20">
 <slot />
+</article>
 
 <style lang="postcss">
 	:global(html) {
 		background-color: theme(colors.gray.800);
 		color: white;
+	}
+
+	a:hover {
+		color : red;
 	}
 </style>
