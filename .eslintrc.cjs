@@ -1,22 +1,40 @@
 module.exports = {
 	root: true,
-	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:svelte/recommended', 'prettier'],
+	extends: [
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:svelte/recommended',
+		'prettier'
+	],
 	parser: '@typescript-eslint/parser',
 	plugins: ['@typescript-eslint', 'prettier'],
-	rules: {
-		semi: ['error', 'always'],
-		quotes: ['error', 'single'],
-		'no-multiple-empty-lines': ['error', { max: 1 }],
-		'prettier/prettier': 'error',
-		'no-tabs': [
-			'error',
+	rulse : {
+		"prettier/prettier": "error",
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"comma-dangle": ["error", "always-multiline"],
+		"no-multiple-empty-lines": [
+			"error",
 			{
-				allowIndentationTabs: true
+			  "max": 1
 			}
-		],
-		'computed-property-spacing': ['error', 'never'],
-		'space-in-parens': ['error', 'never'],
-		'eol-last': ['error', 'always']
+		  ],
+		  "comma-spacing": [
+			"error",
+			{
+			  "before": false,
+			  "after": true
+			}
+		  ],
+		  "no-tabs": [
+			"error",
+			{
+			  "allowIndentationTabs": true
+			}
+		  ],
+		  "computed-property-spacing": ["error", "never"],
+		  "space-in-parens": ["error", "never"],
+		  "eol-last": ["error", "always"],
 	},
 	parserOptions: {
 		sourceType: 'module',
