@@ -17,6 +17,6 @@
 		@apply bg-gray-800 text-slate-300;
 	}
 	a {
-		@apply text-xl hover:text-red-300;
+		@apply text-xl
 	}
 </style>

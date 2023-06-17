@@ -5,3 +5,7 @@
 body {
     @apply font-sans;
   }
+
+a {
+  @apply hover:text-red-300;
+}
