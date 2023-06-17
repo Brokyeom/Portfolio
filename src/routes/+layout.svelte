@@ -2,8 +2,8 @@
 	import '../app.css';
 </script>
 
-<header class="sticky flex flex-row justify-center items-center w-full h-24 px-48">
-	<nav class="flex flex-row gap-8">
+<header class="sticky flex flex-row justify-center items-center w-full h-24 px-48 shadow-xl">
+	<nav class="flex flex-row gap-10">
 		<a href="/">Introduce</a><a href="/portfolio">Portfolio</a><a href="activities">Activities</a>
 	</nav>
 </header>
@@ -14,11 +14,9 @@
 
 <style lang="postcss">
 	:global(html) {
-		background-color: theme(colors.gray.800);
-		color: white;
+		@apply bg-gray-800 text-slate-300;
 	}
-
-	a:hover {
-		color : red;
+	a {
+		@apply text-xl hover:text-red-300;
 	}
 </style>
