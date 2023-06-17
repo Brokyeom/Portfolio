@@ -3,7 +3,7 @@
 
 	<article class="flex gap-20">
 	<section>
-		<h2 class="text-5xl mb-10 font-semibold">Contact</h2>
+		<h2>Contact</h2>
 		<p>Phone : 010 - 5787 - 1603</p>
 		<p>Email : goindol40@gmail.com</p>
 	</section>
