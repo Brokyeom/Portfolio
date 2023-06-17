@@ -1,38 +1,5 @@
-# create-svelte
+# 왜 Svelte, tailwindCSS 썼나요?
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- 주요 프로젝트에서 `React`, `NextJS`, `emotion`, `styled-components` 를 사용하고 있습니다.
+- 새로운 기술들을 작은 볼륨으로 적용하며 공부하기 위해 포트폴리오 사이트 제작에 `Svelte` 를 사용했습니다.
+- 유틸리티 클래스로 디자인 능력이 부족한 저같은 개발자에게 `tailwindCSS` 는 정해진 스타일 가이드로 일관된 스타일을 적용하기 쉽게 해 줍니다.
