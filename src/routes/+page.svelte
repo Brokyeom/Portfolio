@@ -50,9 +50,6 @@
 </main>
 
 <style lang="postcss">
-	h2 {
-		@apply text-5xl mb-10 font-semibold;
-	}
 	p {
 		@apply text-2xl
 	}

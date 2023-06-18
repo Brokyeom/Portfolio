@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply bg-gray-800 text-slate-300;
+}
 body {
     @apply font-sans;
-  }
+}
+
+h2 {
+  @apply text-5xl mb-10 font-semibold;
+}
 
 a {
   @apply hover:text-red-300;

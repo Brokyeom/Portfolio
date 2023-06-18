@@ -13,9 +13,6 @@
 </article>
 
 <style lang="postcss">
-	:global(html) {
-		@apply bg-gray-800 text-slate-300;
-	}
 	a {
 		@apply text-xl
 	}
