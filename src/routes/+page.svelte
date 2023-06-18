@@ -1,14 +1,22 @@
 <script lang="ts">
+    let currentIndex = 0;
+
+    const identity: string[] = ['긍정적인', '끊임없이 탐구하는', '소통중심의'];
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % identity.length;
+    }, 2000);
+
 	type SectionContent = {
 	  text: string;
 	  link?: string;
 	};
-  
+
 	type Section = {
 	  title: string;
 	  content: SectionContent[];
 	};
-  
+
 	let sections: Section[] = [
 	  {
 		title: 'Contact',
@@ -26,10 +34,13 @@
 		],
 	  },
 	];
-  </script>
+</script>
 
 <main>
-	<h1 class="text-6xl font-extrabold leading-relaxed mb-20">안녕하세요,<br />웹 FE 개발자 김형겸입니다!</h1>
+	<h1 class="text-6xl font-extrabold leading-relaxed mb-20">
+        안녕하세요, <span class="text-red-300">{identity[currentIndex]}</span><br />
+        웹 FE 개발자 김형겸입니다!
+    </h1>
 
 	<article class="flex gap-20">
 		{#each sections as { title, content }}
