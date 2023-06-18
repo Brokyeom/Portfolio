@@ -9,7 +9,12 @@ module.exports = {
 	parser: '@typescript-eslint/parser',
 	plugins: ['@typescript-eslint', 'prettier'],
 	rules: {
-		'prettier/prettier': 'error',
+		'prettier/prettier': [
+			'error',
+			{
+				endOfLine: 'auto',
+			},
+		],
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
 		'comma-dangle': ['error', 'always-multiline'],
