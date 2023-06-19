@@ -1,11 +1,22 @@
 <script lang="ts">
-    let currentIndex = 0;
+	let identity: string[] = ['긍정적인', '끊임없이 탐구하는', '소통중심의'];
+    let currentIndex: number = 0;
+    let currentIdentity: string = identity[currentIndex];
 
-    const identity: string[] = ['긍정적인', '끊임없이 탐구하는', '소통중심의'];
+    const updateIdentity = () => {
+        if ((document as any).startViewTransition) {
+            (document as any).startViewTransition(() => {
+                currentIndex = (currentIndex + 1) % identity.length;
+                currentIdentity = identity[currentIndex];
+                return Promise.resolve();
+            });
+        } else {
+            currentIndex = (currentIndex + 1) % identity.length;
+            currentIdentity = identity[currentIndex];
+        }
+    };
 
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % identity.length;
-    }, 2000);
+    setInterval(updateIdentity, 2000);
 
 	type SectionContent = {
 	  text: string;
@@ -38,7 +49,7 @@
 
 <main>
 	<h1 class="text-6xl font-extrabold leading-relaxed mb-20">
-        안녕하세요, <span class="text-red-300">{identity[currentIndex]}</span><br />
+        안녕하세요, <span class="text-red-300">{currentIdentity}</span><br />
         웹 FE 개발자 김형겸입니다!
     </h1>
 
