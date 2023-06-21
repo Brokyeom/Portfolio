@@ -9,11 +9,11 @@
 </header>
 
 <article class="px-48 pt-20">
-<slot />
+	<slot />
 </article>
 
 <style lang="postcss">
 	a {
-		@apply text-xl
+		@apply text-xl;
 	}
 </style>
