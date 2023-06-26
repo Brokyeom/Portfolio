@@ -4,16 +4,8 @@
 	let currentIdentity: string = identity[currentIndex];
 
 	const updateIdentity = () => {
-		if ((document as any).startViewTransition) {
-			(document as any).startViewTransition(() => {
-				currentIndex = (currentIndex + 1) % identity.length;
-				currentIdentity = identity[currentIndex];
-				return Promise.resolve();
-			});
-		} else {
-			currentIndex = (currentIndex + 1) % identity.length;
-			currentIdentity = identity[currentIndex];
-		}
+		currentIndex = (currentIndex + 1) % identity.length;
+		currentIdentity = identity[currentIndex];
 	};
 
 	setInterval(updateIdentity, 2000);

@@ -3,14 +3,7 @@
 	let currentProject: string = portfolios[0];
 
 	const updateCurrentProject = (name: string) => {
-		if ((document as any).startViewTransition) {
-			(document as any).startViewTransition(() => {
-				currentProject = name;
-				return Promise.resolve();
-			});
-		} else {
-			currentProject = name;
-		}
+		currentProject = name;
 	};
 </script>
 
