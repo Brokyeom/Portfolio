@@ -7,7 +7,7 @@ module.exports = {
 		'prettier',
 	],
 	parser: '@typescript-eslint/parser',
-	plugins: ['@typescript-eslint', 'prettier'],
+	plugins: ['@typescript-eslint', 'prettier', 'svelte3'],
 	rules: {
 		'prettier/prettier': [
 			'error',
@@ -38,6 +38,7 @@ module.exports = {
 	overrides: [
 		{
 			files: ['*.svelte'],
+			processor: 'svelte3/svelte3',
 			parser: 'svelte-eslint-parser',
 			parserOptions: {
 				parser: '@typescript-eslint/parser',
